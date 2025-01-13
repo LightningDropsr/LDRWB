@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Čistenie kobercov a nábytku</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, #FFCC00, #FFD633);
+            color: #333;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+        }
+        nav a {
+            color: #FFCC00;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        nav a:hover {
+            background-color: #575757;
+            transform: scale(1.05);
+        }
+        main {
+            padding: 40px 20px;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service {
+            background: #333;
+            color: #FFCC00;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+        .service img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: #333;
+            color: #FFCC00;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            text-align: left;
+        }
+        footer .footer-content p {
+            margin: 5px 0;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 1.8em;
+        }
+        section p {
+            text-align: center;
+        }
+        .pricing-box {
+            background: #333;
+            border: 2px solid #FFCC00;
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .pricing-box p {
+            text-align: left;
+            line-height: 1.6;
+            color: #FFCC00;
+        }
+        .pricing-box p strong {
+            color: #FFD633;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Profesionálne čistenie kobercov a čalúneného nábytku</h1>
+        <p>Koberce, matrace, sedačky, kreslá a rôzny čalúnený nábytok – všetko vyčistíme do dokonalosti!</p>
+    </header>
+
+    <nav>
+        <a href="#services">Služby</a>
+        <a href="#about-contact">O nás</a>
+        <a href="#pricing">Cenník</a>
+    </nav>
+
+    <main>
+        <section id="services">
+            <h2>Naše služby</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="4.jpg" alt="Čistenie kobercov">
+                    <h3>Čistenie kobercov</h3>
+                    <p>Odstránime škvrny a obnovíme farby vašich kobercov.</p>
+                </div>
+                <div class="service">
+                    <img src="2.jpg" alt="Čistenie matracov">
+                    <h3>Čistenie matracov</h3>
+                    <p>Zaistíme hygienickú čistotu pre váš lepší spánok.</p>
+                </div>
+                <div class="service">
+                    <img src="3.jpg" alt="Čistenie sedačiek">
+                    <h3>Čistenie sedačiek</h3>
+                    <p>Obnovíme krásu a pohodlie vášho čalúneného nábytku.</p>
+                </div>
+                <div class="service">
+                    <img src="1.jpg" alt="Čistenie kresiel">
+                    <h3>Čistenie kresiel</h3>
+                    <p>Vaše kreslá budú opäť ako nové.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-contact">
+            <h2>O nás</h2>
+            <p>Sme odborníci na čistenie s bohatými skúsenosťami. Používame moderné technológie a ekologické prípravky, aby sme zaručili dokonalý výsledok a vašu spokojnosť.</p>
+            <p>Email: info@cisteniekobercov.sk</p>
+            <p>Telefón: +421 123 456 789</p>
+            <p>Adresa: Hlavná 123, Bratislava</p>
+        </section>
+
+        <section id="pricing">
+            <h2>Cenník</h2>
+            <div class="pricing-box">
+                <p><strong>Tepovanie kobercov</strong><br>
+                Koberec do 10 m²:  50 €<br>
+                Koberec 10-20 m²:  80 €<br>
+                Koberec väčšieho rozmeru dohodou.</p>
+
+                <p><strong>Tepovanie čalúneného nábytku</strong><br>
+                2-miestna sedačka: 40 €<br>
+                3-miestna sedačka: 50 €<br>
+                Rohová sedačka: 60-80 € (podľa veľkosti)<br>
+                Kreslo: 25 €<br>
+                Taburet: 15 €<br>
+                Matrac: 20-30 € (podľa veľkosti, množstevná zľava dohodou.)</p>
+
+                <p><strong>Účtovaná doprava</strong><br>
+                8 € (v rámci Bratislavy), nad rámec Bratislavy 1 € / km</p>
+
+                <p><strong>Doplňujúce informácie</strong><br>
+                Minimálna objednávka: 30 €<br>
+                Zľavy: Pri objednávke viacerých služieb a pre stálych zákazníkov<br>
+                Expresné služby: +20 % k cene služby</p>
+
+                <p><strong>Príklad kalkulácie</strong><br>
+                Tepovanie 3-miestnej sedačky a koberca 15 m²: 50 € (koberec) + 50 € (sedačka) + 8 € (doprava) = 108 €</p>
+
+                <p>Uvedené ceny sú orientačné a uvedené vrátane DPH.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Všetky práva vyhradené.</p>
+        <p>Obchodné meno: LightningDrop, s.r.o.,<br>
+        Sídlo: Beňadická 3005/5 851 06 Bratislava - mestská časť Petržalka,<br>
+        IČO: 55398791,<br>
+        Zapísaný v: Obchodnom registri Okresného súdu Bratislava III, oddiel: Sro, vl. č.: 169055/B</p>
+    </footer>
+</body>
+</html>
+
